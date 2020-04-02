@@ -1,3 +1,3 @@
-# APLICATION ANDROID
+# APPLICATION ANDROID
 
 https://nemixcraft.com
