@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NemixCraft</string>
+    <string name="todo">TODO</string>
+    <string name="_0">0 %</string>
+    <string name="test">test</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="erreur_404">Erreur 404 !</string>
+    <string name="r_essayer">Réessayer</string>
+    <string name="vous_n_avez_pas_d_internet_veuillez_vous_connecter_un_point_d_acc_s_wifi_o_activez_vos_donn_es_mobiles_puis_r_essayer">Vous n\'avez pas d\'internet ! Veuillez vous connecter à un point d\'accès WIFI où activez vos données mobiles. Puis réessayer.</string>
+</resources>
