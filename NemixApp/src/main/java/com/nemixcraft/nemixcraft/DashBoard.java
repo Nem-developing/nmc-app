@@ -13,20 +13,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class HomeActivity extends AppCompatActivity {
+public class DashBoard extends AppCompatActivity {
     private WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_dash_board);
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        webView = (WebView) findViewById(R.id.webview);
+        WebView webView = (WebView) findViewById(R.id.webview);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://www.nemixcraft.com");
+        webView.loadUrl("https://www.nemixcraft.com/boutique");
 
 
         WebSettings webSettings = webView.getSettings();
@@ -37,29 +37,25 @@ public class HomeActivity extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
         //Set Home Selected
-        bottomNavigationView.setSelectedItemId(R.id.home);
+        bottomNavigationView.setSelectedItemId(R.id.dashboard);
 
         //Perform ItemSelectedListener
-
-
 
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
-                switch (menuItem.getItemId()){
-                    case  R.id.dashboard:
-                        startActivity(new Intent(getApplicationContext(), DashBoard.class));
-                        overridePendingTransition(0,0);
+                switch (menuItem.getItemId()) {
+                    case R.id.dashboard:
                         return true;
-                    case  R.id.home:
+                    case R.id.home:
                         startActivity(new Intent(getApplicationContext(), HomeActivity.class));
-                        overridePendingTransition(0,0);
+                        overridePendingTransition(0, 0);
                         return true;
-                    case  R.id.about:
+                    case R.id.about:
                         startActivity(new Intent(getApplicationContext(), About.class));
-                        overridePendingTransition(0,0);
+                        overridePendingTransition(0, 0);
                         return true;
                 }
 
@@ -67,15 +63,5 @@ public class HomeActivity extends AppCompatActivity {
                 return false;
             }
         });
-    }
-
-
-    @Override
-    public void onBackPressed() {
-        if (webView.canGoBack()) {
-            webView.goBack();
-        } else {
-            super.onBackPressed();
-        }
     }
 }

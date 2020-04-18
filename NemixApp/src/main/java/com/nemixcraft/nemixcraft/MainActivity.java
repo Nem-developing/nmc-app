@@ -1,8 +1,8 @@
 package com.nemixcraft.nemixcraft;
+
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.WindowManager;
@@ -10,8 +10,10 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
 
-import static com.nemixcraft.nemixcraft.R.*;
+import static com.nemixcraft.nemixcraft.R.id;
+import static com.nemixcraft.nemixcraft.R.layout;
 
 
 
