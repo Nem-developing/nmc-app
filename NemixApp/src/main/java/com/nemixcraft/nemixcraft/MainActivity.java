@@ -1,6 +1,7 @@
 package com.nemixcraft.nemixcraft;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -13,7 +14,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import static com.nemixcraft.nemixcraft.R.id;
-import static com.nemixcraft.nemixcraft.R.layout;
 
 
 
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         } else {
             Toast.makeText(getApplicationContext(), "Vous n'avez pas de connection :(", Toast.LENGTH_SHORT).show();
-            setContentView(layout.activity_error404);
+            startActivity(new Intent(this,Error404.class));
         }
 
     }

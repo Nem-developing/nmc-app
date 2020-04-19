@@ -2,15 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/dashboard"
-        android:title="Dashboard"
-        android:icon="@drawable/ic_dashboard"/>
+        android:id="@+id/staff"
+        android:title="Staff"
+        android:icon="@drawable/ic_staff"/>
+    <item
+        android:id="@+id/reglement"
+        android:title="Règlement"
+        android:icon="@drawable/ic_reglement"/>
     <item
         android:id="@+id/home"
         android:title="Home"
         android:icon="@drawable/ic_home"/>
     <item
-        android:id="@+id/about"
-        android:title="About"
-        android:icon="@drawable/ic_about"/>
+        android:id="@+id/forum"
+        android:title="Forum"
+        android:icon="@drawable/ic_forum"/>
+    <item
+        android:id="@+id/statistiques"
+        android:title="Serveurs"
+        android:icon="@drawable/ic_statistiques"/>
 </menu>

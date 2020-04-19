@@ -13,9 +13,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Error404"></activity>
-        <activity android:name=".About" />
-        <activity android:name=".DashBoard" />
+        <activity android:name=".StatistiquesActivity"></activity>
+        <activity android:name=".ForumActivity" />
+        <activity android:name=".ReglementActivity" />
+        <activity android:name=".StaffActivity" />
+        <activity android:name=".Error404" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
