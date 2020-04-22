@@ -7,11 +7,11 @@
         android:icon="@drawable/ic_staff"/>
     <item
         android:id="@+id/reglement"
-        android:title="Règlement"
+        android:title="Règlements"
         android:icon="@drawable/ic_reglement"/>
     <item
         android:id="@+id/home"
-        android:title="Home"
+        android:title="Accueil"
         android:icon="@drawable/ic_home"/>
     <item
         android:id="@+id/forum"

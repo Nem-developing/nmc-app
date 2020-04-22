@@ -31,7 +31,7 @@ public class HomeActivity extends AppCompatActivity {
 
         webView = (WebView) findViewById(R.id.webview);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://www.nemixcraft.com/accueil_nmc");
+        webView.loadUrl("https://www.nemixcraft.com/accueil_nmc_app");
 
 
         WebSettings webSettings = webView.getSettings();
