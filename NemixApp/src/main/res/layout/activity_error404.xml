@@ -10,16 +10,17 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
         android:layout_above="@id/imageView2"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
         android:text="@string/erreur_404"
         android:textColor="#fff"
-        android:textSize="75sp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:gravity="center" tools:targetApi="jelly_bean" />
+        android:textSize="50pt"
+        tools:targetApi="jelly_bean" />
 
 
     <ImageView
@@ -30,29 +31,31 @@
         android:layout_centerVertical="true"
         app:srcCompat="@drawable/monney_1"
         android:contentDescription="@string/todo" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageView2"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="#00FD6D6D"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
         android:text="@string/vous_n_avez_pas_d_internet_veuillez_vous_connecter_un_point_d_acc_s_wifi_o_activez_vos_donn_es_mobiles_puis_r_essayer"
         android:textColor="#fff"
-        android:gravity="center"
-        android:textSize="25sp"
-        android:layout_marginTop="35dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        />
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/button_switch"
         android:layout_width="match_parent"
+        android:layout_marginTop="10px"
         android:layout_height="83dp"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
+        android:background="#3F51B5"
         android:gravity="center"
         android:text="@string/r_essayer"
-        android:textSize="50sp"
-        android:layout_alignParentEnd="true"
-        />
+        android:textSize="50sp" />
 
 </RelativeLayout>
